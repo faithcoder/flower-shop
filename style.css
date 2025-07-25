@@ -283,11 +283,13 @@ h1, h2, h3, h4, h5 {
             border-top: 1px solid #e1e1e1;
             max-width: 1200px;
             margin: auto;
+            flex-wrap: wrap;
         }
 
         .faogei-footer-logo {
             display: flex;
             align-items: center;
+            flex-wrap: wrap;
         }
 
         .faogei-footer-logo img {
