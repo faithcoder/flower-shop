@@ -17,7 +17,7 @@
 body {
     font-family: var(--faogei-font);
     line-height: 1.6;
-    background: #f9f9f9;
+    background: #f3f5fa;
     color: var(--faogei-dark);
 }
 
@@ -292,7 +292,6 @@ h5 {
 
 
 .faogei-footer-container {
-    background-color: white;
     padding: 20px;
     display: flex;
     justify-content: space-between;
@@ -304,12 +303,13 @@ h5 {
 
 .faogei-footer-logo {
     display: flex;
-    align-items: center;
-    flex-wrap: wrap;
+    align-items: left;
+    flex-direction: column;
 }
 
 .faogei-footer-logo img {
     margin-right: 10px;
+    max-width: 120px;
 }
 
 .faogei-footer-links {
@@ -318,9 +318,11 @@ h5 {
 }
 
 .faogei-footer-links a {
-    color: #007bff;
+    color: #666;
     text-decoration: none;
     margin: 5px 0;
+    font-family: var(--faogei-font);
+    font-size: 1rem;
 }
 
 .faogei-footer-social {
