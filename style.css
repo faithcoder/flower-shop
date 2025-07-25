@@ -1,136 +1,151 @@
 :root {
-  --faogei-primary: #f36d00;
-  --faogei-dark: #222;
-  --faogei-light: #fff;
-  --faogei-font: 'Inter', sans-serif;
-  --faogei-font-heading: "Noto Serif", serif;
-  --faogei-padding: 1rem;
-  --faogei-radius: 6px;
+    --faogei-primary: #f36d00;
+    --faogei-dark: #222;
+    --faogei-light: #fff;
+    --faogei-font: 'Inter', sans-serif;
+    --faogei-font-heading: "Noto Serif", serif;
+    --faogei-padding: 1rem;
+    --faogei-radius: 6px;
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: var(--faogei-font);
-  line-height: 1.6;
-  background: #f9f9f9;
-  color: var(--faogei-dark);
+    font-family: var(--faogei-font);
+    line-height: 1.6;
+    background: #f9f9f9;
+    color: var(--faogei-dark);
 }
-h1, h2, h3, h4, h5 {
-      font-family: var(--faogei-font-heading);
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: var(--faogei-font-heading);
 }
+
 .faogei-container {
-  max-width: 1200px;
-  margin: auto;
-  padding: var(--faogei-padding);
-  
+    max-width: 1200px;
+    margin: auto;
+    padding: var(--faogei-padding);
+
 }
+
 .flex-layout {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+.flex-layout-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .faogei-header {
-  background: var(--faogei-light);
+    background: var(--faogei-light);
 }
 
 .faogei-logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: var(--faogei-primary);
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--faogei-primary);
 }
 
 .faogei-nav {
-  display: flex;
-  gap: 1rem;
-  justify-content: flex-end;
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
 }
 
 .faogei-nav a {
-  text-decoration: none;
-  color: var(--faogei-dark);
+    text-decoration: none;
+    color: var(--faogei-dark);
 }
 
 .faogei-hero {
-  background: var(--faogei-light);
-  padding: 2rem 0;
+    background: var(--faogei-light);
+    padding: 2rem 0;
 }
 
 .faogei-hero-text h1 {
-  font-size: 4rem;
-  line-height: 1em;
-  font-family: var(--faogei-font-heading);
+    font-size: 4rem;
+    line-height: 1em;
+    font-family: var(--faogei-font-heading);
 }
 
 .faogei-hero-text span {
-  color: var(--faogei-primary);
+    color: var(--faogei-primary);
 }
 
 .faogei-hero-image img {
-  max-width: 100%;
+    max-width: 100%;
 }
 
 .faogei-products h2 {
-  text-align: center;
-  margin: 2rem 0 1rem;
-  font-size: 3rem;
+    text-align: center;
+    margin: 2rem 0 1rem;
+    font-size: 3rem;
 }
 
 .faogei-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 1rem;
-  margin: 1rem 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+    margin: 1rem 0;
 }
 
 .faogei-card {
-  text-align: center;
-  border-radius: var(--faogei-radius);
+    text-align: center;
+    border-radius: var(--faogei-radius);
 }
 
 .faogei-card img {
     width: 100%;
 }
+
 .faogei-card button {
-  background: var(--faogei-primary);
-  color: var(--faogei-light);
-  border: none;
-  padding: 0.5rem 1rem;
-  margin-top: 0.5rem;
-  cursor: pointer;
-  border-radius: var(--faogei-radius);
+    background: var(--faogei-primary);
+    color: var(--faogei-light);
+    border: none;
+    padding: 0.5rem 1rem;
+    margin-top: 0.5rem;
+    cursor: pointer;
+    border-radius: var(--faogei-radius);
 }
+
 .faogei-about {
-  background: #f3f5fa;
-  padding: 3rem 0;
+    background: #f3f5fa;
+    padding: 3rem 0;
 }
 
 .faogei-about-wrapper {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-  flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
 }
 
 .faogei-about-left {
-  flex: 1 1 100px;
-  position: relative;
+    flex: 1 1 100px;
+    position: relative;
 }
 
 .faogei-about-img-wrapper {
-  position: relative;
-  display: inline-block;
+    position: relative;
+    display: inline-block;
 }
 
 .faogei-about-img-wrapper img {
-  width: 100%;
-  max-width: 400px;
-  border-radius: 6px;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 6px;
 }
 
 .faogei-about-badge {
@@ -144,221 +159,257 @@ h1, h2, h3, h4, h5 {
 }
 
 .faogei-about-right {
-  flex: 1 1 300px;
+    flex: 1 1 300px;
 }
 
 .faogei-about-right h3 {
-  font-size: 3rem;
-  margin-bottom: 1rem;
-  font-weight: bold;
-  color: var(--faogei-dark);
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    color: var(--faogei-dark);
 }
 
 .faogei-about-right ul {
-  list-style: disc;
-  padding-left: 1.5rem;
-  color: #555;
+    list-style: disc;
+    padding-left: 1.5rem;
+    color: #555;
 }
 
 .faogei-about-right li {
-  margin-bottom: 1rem;
-  line-height: 1.6;
+    margin-bottom: 1rem;
+    line-height: 1.6;
 }
 
 
 .faogei-deals {
-  background: #f3f5fa;
-  padding: 3rem 1rem;
-  text-align: center;
+    background: #f3f5fa;
+    padding: 3rem 1rem;
+    text-align: center;
 }
 
 .faogei-deals h2 {
-  font-size: 3rem;
-  margin-bottom: 0.5rem;
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
 }
 
 .faogei-deals h2 span {
-  color: var(--faogei-primary);
+    color: var(--faogei-primary);
 }
 
 .faogei-deals-subtitle {
-  max-width: 600px;
-  margin: 0 auto 2rem;
-  color: #666;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    color: #666;
 }
+
 .faogei-container h3 {
     font-size: 3rem;
 }
+
 .faogei-deals-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-  justify-content: center;
-  align-items: stretch;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: stretch;
 }
 
 .faogei-deals-left {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  flex: 1 1 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    flex: 1 1 300px;
 }
 
 .faogei-deals-right {
-  flex: 2 1 600px;
+    flex: 2 1 600px;
 }
 
 .faogei-deal-box {
-  position: relative;
-  overflow: hidden;
-  border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
 }
 
 .faogei-deal-box img {
-  width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 12px;
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px;
 }
 
 .faogei-deal-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  text-align: center;
-  text-shadow: 0 0 5px rgba(0,0,0,0.4);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
 }
 
 .faogei-deal-content h3,
 .faogei-deal-content h4 {
-  margin-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .faogei-deal-content a {
-  color: white;
-  font-weight: bold;
-  text-decoration: underline;
+    color: white;
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 
 .faogei-cta {
-  background: url('assets/news-letter-bg.png') no-repeat center/cover;
-  color: var(--faogei-light);
-  text-align: center;
-  padding: 10rem 1rem;
+    background: url('assets/news-letter-bg.png') no-repeat center/cover;
+    color: var(--faogei-light);
+    text-align: center;
+    padding: 10rem 1rem;
 }
 
 .faogei-cta h3 span {
-  color: var(--faogei-primary);
+    color: var(--faogei-primary);
 }
 
 .faogei-cta form {
-  margin-top: 1rem;
+    margin-top: 1rem;
 }
 
 .faogei-cta input {
-  padding: 0.5rem;
-  border: none;
-  width: 60%;
-  max-width: 300px;
+    padding: 0.5rem;
+    border: none;
+    width: 60%;
+    max-width: 300px;
 }
 
 .faogei-cta button {
-  padding: 0.5rem 1rem;
-  background: var(--faogei-primary);
-  color: #fff;
-  border: none;
-  cursor: pointer;
+    padding: 0.5rem 1rem;
+    background: var(--faogei-primary);
+    color: #fff;
+    border: none;
+    cursor: pointer;
 }
 
 
 .faogei-footer-container {
-            background-color: white;
-            padding: 20px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-top: 1px solid #e1e1e1;
-            max-width: 1200px;
-            margin: auto;
-            flex-wrap: wrap;
-        }
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #e1e1e1;
+    max-width: 1200px;
+    margin: auto;
+    flex-wrap: wrap;
+}
 
-        .faogei-footer-logo {
-            display: flex;
-            align-items: center;
-            flex-wrap: wrap;
-        }
+.faogei-footer-logo {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
 
-        .faogei-footer-logo img {
-            margin-right: 10px;
-        }
+.faogei-footer-logo img {
+    margin-right: 10px;
+}
 
-        .faogei-footer-links {
-            display: flex;
-            flex-direction: column;
-        }
+.faogei-footer-links {
+    display: flex;
+    flex-direction: column;
+}
 
-        .faogei-footer-links a {
-            color: #007bff;
-            text-decoration: none;
-            margin: 5px 0;
-        }
+.faogei-footer-links a {
+    color: #007bff;
+    text-decoration: none;
+    margin: 5px 0;
+}
 
-        .faogei-footer-social {
-            display: flex;
-            gap: 10px;
-        }
+.faogei-footer-social {
+    display: flex;
+    gap: 10px;
+}
 
-        .faogei-footer-social a img {
-            width: 24px;
-            height: 24px;
-        }
+.faogei-footer-social a img {
+    width: 24px;
+    height: 24px;
+}
+
+.mobile-nav {
+    display: none;
+}
 
 /* Responsive */
 @media (max-width: 768px) {
-  .faogei-nav {
-    flex-direction: column;
-    align-items: flex-start;
-    display: none;
-  }
+    .faogei-nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 
-  .faogei-flex {
-    flex-direction: column;
-  }
+    .desktop-nav {
+        display: none;
+    }
 
-  .faogei-footer input {
-    width: 100%;
-    margin-bottom: 1rem;
-  }
+    .mobile-nav {
+        display: block;
+    }
 
-  .faogei-footer button {
-    width: 100%;
-    margin-left: 0;
-  }
-  .faogei-about-wrapper {
-    flex-direction: column;
-    text-align: center;
-  }
+    .faogei-flex {
+        flex-direction: column;
+    }
 
-  .faogei-about-right ul {
-    padding-left: 1rem;
-    text-align: left;
-  }
+    .faogei-footer input {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
 
-  .faogei-about-badge {
-    top: -20px;
-    width: 60px;
-    height: 60px;
-  }
-  .faogei-deals-wrapper {
-    flex-direction: column;
-  }
+    .faogei-footer button {
+        width: 100%;
+        margin-left: 0;
+    }
 
-  .flex-layout {
-    flex-direction: column-reverse;
+    .faogei-about-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .faogei-about-right ul {
+        padding-left: 1rem;
+        text-align: left;
+    }
+
+    .faogei-about-badge {
+        top: -20px;
+        width: 60px;
+        height: 60px;
+    }
+
+    .faogei-deals-wrapper {
+        flex-direction: column;
+    }
+
+    .flex-layout {
+        flex-direction: column-reverse;
+    }
+
+    .faogei-footer-container {
+        flex-direction: column;
+        align-items: left;
+    }
+
+    .faogei-container h3 {
+        font-size: 2rem;
+    }
+
+    .faogei-deals-right {
+        flex: 2 1 0px;
+    }
+
+    img.faogei-about-badge {
+        display: none;
+
+
+    }
+
+    .faogei-deal-content h3 {
+        font-size: 1rem;
+    }
 }
-}
-
