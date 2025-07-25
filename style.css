@@ -20,17 +20,23 @@ body {
   background: #f9f9f9;
   color: var(--faogei-dark);
 }
-
+h1, h2, h3, h4, h5 {
+      font-family: var(--faogei-font-heading);
+}
 .faogei-container {
   max-width: 1200px;
   margin: auto;
   padding: var(--faogei-padding);
+  
+}
+.flex-layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .faogei-header {
   background: var(--faogei-light);
-  padding: 1rem 0;
-  border-bottom: 1px solid #ddd;
 }
 
 .faogei-logo {
@@ -56,7 +62,9 @@ body {
 }
 
 .faogei-hero-text h1 {
-  font-size: 2rem;
+  font-size: 4rem;
+  line-height: 1em;
+  font-family: var(--faogei-font-heading);
 }
 
 .faogei-hero-text span {
@@ -70,22 +78,24 @@ body {
 .faogei-products h2 {
   text-align: center;
   margin: 2rem 0 1rem;
+  font-size: 3rem;
 }
 
 .faogei-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 1rem;
+  margin: 1rem 0;
 }
 
 .faogei-card {
-  background: var(--faogei-light);
-  border: 1px solid #ddd;
-  padding: 1rem;
   text-align: center;
   border-radius: var(--faogei-radius);
 }
 
+.faogei-card img {
+    width: 100%;
+}
 .faogei-card button {
   background: var(--faogei-primary);
   color: var(--faogei-light);
@@ -95,57 +105,149 @@ body {
   cursor: pointer;
   border-radius: var(--faogei-radius);
 }
-
 .faogei-about {
-  background: #fff8f3;
-  padding: 2rem 0;
+  background: #f3f5fa;
+  padding: 3rem 0;
 }
 
-.faogei-flex {
+.faogei-about-wrapper {
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
   gap: 2rem;
+  flex-wrap: wrap;
 }
 
-.faogei-about-img img {
-  width: 100%;
-  max-width: 400px;
-}
-
-.faogei-about-text h3 {
-  color: var(--faogei-dark);
-  margin-bottom: 1rem;
-}
-
-.faogei-deals h2 {
-  text-align: center;
-  margin-bottom: 1rem;
-}
-
-.faogei-deals span {
-  color: var(--faogei-primary);
-}
-
-.faogei-deal-card {
+.faogei-about-left {
+  flex: 1 1 100px;
   position: relative;
 }
 
-.faogei-badge {
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
-  background: var(--faogei-primary);
-  color: #fff;
-  padding: 0.3rem 0.6rem;
-  border-radius: var(--faogei-radius);
-  font-size: 0.8rem;
+.faogei-about-img-wrapper {
+  position: relative;
+  display: inline-block;
 }
+
+.faogei-about-img-wrapper img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 6px;
+}
+
+.faogei-about-badge {
+    position: absolute;
+    top: -75px;
+    right: -150px;
+    transform: translateX(-50%);
+    width: 150px !important;
+    height: 150px;
+    z-index: 2;
+}
+
+.faogei-about-right {
+  flex: 1 1 300px;
+}
+
+.faogei-about-right h3 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  color: var(--faogei-dark);
+}
+
+.faogei-about-right ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+  color: #555;
+}
+
+.faogei-about-right li {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+
+.faogei-deals {
+  background: #f3f5fa;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.faogei-deals h2 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.faogei-deals h2 span {
+  color: var(--faogei-primary);
+}
+
+.faogei-deals-subtitle {
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  color: #666;
+}
+.faogei-container h3 {
+    font-size: 3rem;
+}
+.faogei-deals-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.faogei-deals-left {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  flex: 1 1 300px;
+}
+
+.faogei-deals-right {
+  flex: 2 1 600px;
+}
+
+.faogei-deal-box {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.faogei-deal-box img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+}
+
+.faogei-deal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  text-shadow: 0 0 5px rgba(0,0,0,0.4);
+}
+
+.faogei-deal-content h3,
+.faogei-deal-content h4 {
+  margin-bottom: 0.5rem;
+}
+
+.faogei-deal-content a {
+  color: white;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
 
 .faogei-cta {
   background: url('assets/news-letter-bg.png') no-repeat center/cover;
   color: var(--faogei-light);
   text-align: center;
-  padding: 3rem 1rem;
+  padding: 10rem 1rem;
 }
 
 .faogei-cta h3 span {
@@ -168,16 +270,57 @@ body {
   background: var(--faogei-primary);
   color: #fff;
   border: none;
-  margin-left: 0.5rem;
   cursor: pointer;
-  border-radius: var(--faogei-radius);
 }
+
+
+.faogei-footer-container {
+            background-color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid #e1e1e1;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .faogei-footer-logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .faogei-footer-logo img {
+            margin-right: 10px;
+        }
+
+        .faogei-footer-links {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .faogei-footer-links a {
+            color: #007bff;
+            text-decoration: none;
+            margin: 5px 0;
+        }
+
+        .faogei-footer-social {
+            display: flex;
+            gap: 10px;
+        }
+
+        .faogei-footer-social a img {
+            width: 24px;
+            height: 24px;
+        }
 
 /* Responsive */
 @media (max-width: 768px) {
   .faogei-nav {
     flex-direction: column;
     align-items: flex-start;
+    display: none;
   }
 
   .faogei-flex {
@@ -193,4 +336,27 @@ body {
     width: 100%;
     margin-left: 0;
   }
+  .faogei-about-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .faogei-about-right ul {
+    padding-left: 1rem;
+    text-align: left;
+  }
+
+  .faogei-about-badge {
+    top: -20px;
+    width: 60px;
+    height: 60px;
+  }
+  .faogei-deals-wrapper {
+    flex-direction: column;
+  }
+
+  .flex-layout {
+    flex-direction: column-reverse;
 }
+}
+
