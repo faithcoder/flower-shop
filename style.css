@@ -1,0 +1,196 @@
+:root {
+  --faogei-primary: #f36d00;
+  --faogei-dark: #222;
+  --faogei-light: #fff;
+  --faogei-font: 'Inter', sans-serif;
+  --faogei-font-heading: "Noto Serif", serif;
+  --faogei-padding: 1rem;
+  --faogei-radius: 6px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--faogei-font);
+  line-height: 1.6;
+  background: #f9f9f9;
+  color: var(--faogei-dark);
+}
+
+.faogei-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: var(--faogei-padding);
+}
+
+.faogei-header {
+  background: var(--faogei-light);
+  padding: 1rem 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.faogei-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--faogei-primary);
+}
+
+.faogei-nav {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+
+.faogei-nav a {
+  text-decoration: none;
+  color: var(--faogei-dark);
+}
+
+.faogei-hero {
+  background: var(--faogei-light);
+  padding: 2rem 0;
+}
+
+.faogei-hero-text h1 {
+  font-size: 2rem;
+}
+
+.faogei-hero-text span {
+  color: var(--faogei-primary);
+}
+
+.faogei-hero-image img {
+  max-width: 100%;
+}
+
+.faogei-products h2 {
+  text-align: center;
+  margin: 2rem 0 1rem;
+}
+
+.faogei-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+.faogei-card {
+  background: var(--faogei-light);
+  border: 1px solid #ddd;
+  padding: 1rem;
+  text-align: center;
+  border-radius: var(--faogei-radius);
+}
+
+.faogei-card button {
+  background: var(--faogei-primary);
+  color: var(--faogei-light);
+  border: none;
+  padding: 0.5rem 1rem;
+  margin-top: 0.5rem;
+  cursor: pointer;
+  border-radius: var(--faogei-radius);
+}
+
+.faogei-about {
+  background: #fff8f3;
+  padding: 2rem 0;
+}
+
+.faogei-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.faogei-about-img img {
+  width: 100%;
+  max-width: 400px;
+}
+
+.faogei-about-text h3 {
+  color: var(--faogei-dark);
+  margin-bottom: 1rem;
+}
+
+.faogei-deals h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.faogei-deals span {
+  color: var(--faogei-primary);
+}
+
+.faogei-deal-card {
+  position: relative;
+}
+
+.faogei-badge {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background: var(--faogei-primary);
+  color: #fff;
+  padding: 0.3rem 0.6rem;
+  border-radius: var(--faogei-radius);
+  font-size: 0.8rem;
+}
+
+.faogei-cta {
+  background: url('assets/news-letter-bg.png') no-repeat center/cover;
+  color: var(--faogei-light);
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.faogei-cta h3 span {
+  color: var(--faogei-primary);
+}
+
+.faogei-cta form {
+  margin-top: 1rem;
+}
+
+.faogei-cta input {
+  padding: 0.5rem;
+  border: none;
+  width: 60%;
+  max-width: 300px;
+}
+
+.faogei-cta button {
+  padding: 0.5rem 1rem;
+  background: var(--faogei-primary);
+  color: #fff;
+  border: none;
+  margin-left: 0.5rem;
+  cursor: pointer;
+  border-radius: var(--faogei-radius);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .faogei-nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .faogei-flex {
+    flex-direction: column;
+  }
+
+  .faogei-footer input {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .faogei-footer button {
+    width: 100%;
+    margin-left: 0;
+  }
+}
